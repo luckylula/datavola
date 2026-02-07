@@ -22,6 +22,21 @@ export const copy = {
     description:
       "DataVola s'intègre avec vos applications préférées pour fluidifier votre travail.",
   },
+  beforeAfter: {
+    title: 'Avant et après DataVola',
+    description:
+      "Découvrez la transformation que l'automatisation peut apporter à votre quotidien.",
+    before: [
+      { icon: '⏱️', text: 'Heures perdues en tâches manuelles répétitives' },
+      { icon: '📧', text: 'Emails et rapports créés un par un' },
+      { icon: '😓', text: 'Le stress des délais et des oublis' },
+    ],
+    after: [
+      { icon: '🚀', text: 'Processus automatisés qui tournent en arrière-plan' },
+      { icon: '✨', text: 'Données mises à jour automatiquement' },
+      { icon: '😌', text: 'Plus de temps pour ce qui compte vraiment' },
+    ],
+  },
   finalCta: {
     title: 'Prêt à automatiser ?',
     description:
