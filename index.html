@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataVola - Automatisation Intelligente par IA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="DataVola logo.png" alt="DataVola" class="logo-image">
+            </div>npm run dev
+            <ul class="nav-links">
+                <li><a href="#inicio">Accueil</a></li>
+                <li><a href="#servicios">Solutions</a></li>
+                <li><a href="#casos-uso">Cas d'Usage</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <!-- Stripe-style Gradient Background with Diagonal Cut -->
+        <div class="hero-gradient-bg"></div>
+        
+        <div class="hero-content">
+            <!-- Left: Text Content -->
+            <div class="hero-text">
+                <h1 class="hero-title">Libérez votre temps en automatisant les tâches répétitives avec l'IA.</h1>
+                <p class="hero-description">Transformez vos processus répétitifs en flux de travail intelligents qui fonctionnent 24/7, libérant votre temps pour ce qui compte vraiment.</p>
+                
+                <!-- Video Animation -->
+                <div class="hero-video-container">
+                    <video class="hero-video" autoplay loop muted playsinline>
+                        <source src="images/videoanim.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                </div>
+            </div>
+            
+            <!-- Right: Dashboard Panel -->
+            <div class="hero-dashboard">
+                <div class="dashboard-panel">
+                    <img src="dashboard avec portable.png" alt="Dashboard DataVola avec portable" class="dashboard-image">
+                </div>
+            </div>
+            
+            <!-- Problems Section - Right after description -->
+            <div class="hero-problems-section">
+                <div class="ai-action-container">
+                    <div class="ai-action-header">
+                        <h2 class="ai-action-title">Identifiez vos défis quotidiens</h2>
+                        <p class="ai-action-description">Découvrez comment DataVola transforme vos problèmes en solutions automatisées.</p>
+                    </div>
+                    
+                    <div class="ai-widget ai-widget-problems">
+                        <!-- macOS-style window header -->
+                        <div class="widget-header">
+                            <div class="window-controls">
+                                <span class="control control-close"></span>
+                                <span class="control control-minimize"></span>
+                                <span class="control control-maximize"></span>
+                            </div>
+                            <div class="window-title">DataVola - Identification des Problèmes</div>
+                        </div>
+                        
+                        <div class="widget-content">
+                            <!-- Left Column: WhatsApp Messages -->
+                            <div class="widget-column widget-input">
+                                <div class="column-header">
+                                    <h3 class="column-title">Messages</h3>
+                                </div>
+                                <div class="input-simulation">
+                                    <div class="input-message">
+                                        <div class="message-icon">💬</div>
+                                        <div class="message-content">
+                                            <div class="message-header">
+                                                <span class="message-source">WhatsApp</span>
+                                                <span class="message-time" id="problems-message-time">14:32</span>
+                                            </div>
+                                            <p class="message-text" id="problems-input-text">Nouveau message reçu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Right Column: Problems Process -->
+                            <div class="widget-column widget-process">
+                                <div class="column-header">
+                                    <h3 class="column-title">Problèmes identifiés</h3>
+                                </div>
+                                <div class="process-steps process-steps-problems">
+                                    <!-- Problem 1 -->
+                                    <div class="process-step process-step-problem" data-step="1">
+                                        <div class="step-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                                                <path d="M12 8v4" stroke-width="2" stroke-linecap="round"/>
+                                                <path d="M12 16h.01" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="step-content">
+                                            <h4 class="step-title">Je réponds toujours aux mêmes questions</h4>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Problem 2 -->
+                                    <div class="process-step process-step-problem" data-step="2">
+                                        <div class="step-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                                                <path d="M12 6v6l4 2" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="step-content">
+                                            <h4 class="step-title">Je perds du temps avec des tâches répétitives</h4>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Problem 3 -->
+                                    <div class="process-step process-step-problem" data-step="3">
+                                        <div class="step-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="step-content">
+                                            <h4 class="step-title">On m'écrit sur WhatsApp ou Instagram à toute heure</h4>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Problem 4 -->
+                                    <div class="process-step process-step-problem" data-step="4">
+                                        <div class="step-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke-width="2"/>
+                                                <line x1="8" y1="21" x2="16" y2="21" stroke-width="2" stroke-linecap="round"/>
+                                                <line x1="12" y1="17" x2="12" y2="21" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="step-content">
+                                            <h4 class="step-title">Je devrais publier sur les réseaux, mais je ne le fais pas</h4>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Problem 5 -->
+                                    <div class="process-step process-step-problem" data-step="5">
+                                        <div class="step-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <rect x="2" y="2" width="20" height="20" rx="2" ry="2" stroke-width="2"/>
+                                                <path d="M7 7h10M7 12h10M7 17h5" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="step-content">
+                                            <h4 class="step-title">Mon site web n'explique pas bien ce que je fais (ou je n'ai pas de site)</h4>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Problem 6 -->
+                                    <div class="process-step process-step-problem" data-step="6">
+                                        <div class="step-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <circle cx="9" cy="7" r="4" stroke-width="2"/>
+                                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="step-content">
+                                            <h4 class="step-title">Tout passe par moi et je suis toujours débordé(e)</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Image Carousel - BrandLyft Style -->
+        <div class="hero-carousel-section">
+            <div class="carousel-container">
+                <div class="carousel-track" id="carousel-track">
+                    <!-- Images will be loaded dynamically from images-list.json -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- AI Widget (Simulation) - Below the main hero content -->
+        <div class="hero-widget-section">
+            <div class="ai-widget">
+                    <!-- macOS-style window header -->
+                    <div class="widget-header">
+                        <div class="window-controls">
+                            <span class="control control-close"></span>
+                            <span class="control control-minimize"></span>
+                            <span class="control control-maximize"></span>
+                        </div>
+                        <div class="window-title">DataVola - Automatisation IA</div>
+                    </div>
+                    
+                    <div class="widget-content">
+                        <!-- Left Column: Input -->
+                        <div class="widget-column widget-input">
+                            <div class="column-header">
+                                <h3 class="column-title">Entrée</h3>
+                            </div>
+                            <div class="input-simulation">
+                                <div class="input-message">
+                                    <div class="message-icon">💬</div>
+                                    <div class="message-content">
+                                        <div class="message-header">
+                                            <span class="message-source">WhatsApp</span>
+                                            <span class="message-time">14:32</span>
+                                        </div>
+                                        <p class="message-text" id="input-text">Un nouveau lead arrive via WhatsApp</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Column: Process -->
+                        <div class="widget-column widget-process">
+                            <div class="column-header">
+                                <h3 class="column-title">Processus</h3>
+                            </div>
+                            <div class="process-steps">
+                                <!-- Step 1 -->
+                                <div class="process-step" data-step="1">
+                                    <div class="step-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M9 11l3 3L22 4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4 class="step-title">Analyse du sentiment</h4>
+                                        <p class="step-description">Évaluation de l'intention du client</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Step 2 -->
+                                <div class="process-step" data-step="2">
+                                    <div class="step-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <ellipse cx="12" cy="5" rx="9" ry="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4 class="step-title">Consultation de la base de données</h4>
+                                        <p class="step-description">Recherche d'informations client</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Step 3 -->
+                                <div class="process-step" data-step="3">
+                                    <div class="step-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2 17L12 22L22 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2 12L12 17L22 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4 class="step-title">Génération de réponse IA</h4>
+                                        <p class="step-description">Création d'une réponse personnalisée</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Step 4 -->
+                                <div class="process-step" data-step="4">
+                                    <div class="step-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4 class="step-title">Notification Slack envoyée</h4>
+                                        <p class="step-description">L'équipe a été notifiée</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Est-ce que ça vous arrive ? Section -->
+    <section class="problems-cards-section">
+        <div class="problems-cards-container">
+            <h2 class="problems-cards-title">Est-ce que ça vous arrive ?</h2>
+            <div class="problems-cards-grid">
+                <!-- Card 1 - Gradient -->
+                <div class="problem-card problem-card-gradient">
+                    <div class="problem-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <p class="problem-card-text">Vous répondez toujours aux mêmes emails</p>
+                </div>
+                
+                <!-- Card 2 - White -->
+                <div class="problem-card problem-card-white">
+                    <div class="problem-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="2" width="6" height="20" rx="2"/>
+                            <path d="M17 2h2a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2"/>
+                            <path d="M5 2H3a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h2"/>
+                            <line x1="12" y1="6" x2="12" y2="18"/>
+                        </svg>
+                    </div>
+                    <p class="problem-card-text">Vous recopiez des données d'un endroit à l'autre</p>
+                </div>
+                
+                <!-- Card 3 - White -->
+                <div class="problem-card problem-card-white">
+                    <div class="problem-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <p class="problem-card-text">Vous oubliez de suivre vos clients</p>
+                </div>
+                
+                <!-- Card 4 - Gradient -->
+                <div class="problem-card problem-card-gradient">
+                    <div class="problem-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <p class="problem-card-text">Vous ne savez pas d'où viennent vos leads</p>
+                </div>
+                
+                <!-- Card 5 - White -->
+                <div class="problem-card problem-card-white">
+                    <div class="problem-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <p class="problem-card-text">Publier sur les réseaux sociaux vous ennuie et vous le repoussez</p>
+                </div>
+                
+                <!-- Card 6 - White -->
+                <div class="problem-card problem-card-white">
+                    <div class="problem-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="2" ry="2"/>
+                            <path d="M7 7h10M7 12h10M7 17h5"/>
+                        </svg>
+                    </div>
+                    <p class="problem-card-text">Mon site web n'explique pas bien ce que je fais (ou je n'ai pas de site)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connections Diagram Section -->
+    <section class="connections-diagram-section">
+        <div class="connections-container">
+            <svg class="connections-svg" id="connectionsSvg">
+                <!-- Las líneas se generarán con JavaScript -->
+            </svg>
+
+            <div class="diagram">
+                <!-- Nodo Central -->
+                <div class="node node-center" id="center">
+                    <img src="DataVola logo.png" alt="DataVola" class="center-logo">
+                </div>
+
+                <!-- Nodos conectados -->
+                <div class="node node-1" id="node1">
+                    <div class="node-icon">📧</div>
+                    <div class="node-label">Gmail</div>
+                </div>
+
+                <div class="node node-2" id="node2">
+                    <div class="node-icon">📊</div>
+                    <div class="node-label">Google Sheets</div>
+                </div>
+
+                <div class="node node-3" id="node3">
+                    <div class="node-icon">💬</div>
+                    <div class="node-label">Slack</div>
+                </div>
+
+                <div class="node node-4" id="node4">
+                    <div class="node-icon">📅</div>
+                    <div class="node-label">Google Calendar</div>
+                </div>
+
+                <div class="node node-5" id="node5">
+                    <div class="node-icon">📱</div>
+                    <div class="node-label">WhatsApp</div>
+                </div>
+
+                <div class="node node-6" id="node6">
+                    <div class="node-icon">🗄️</div>
+                    <div class="node-label">Database</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations Section -->
+    <section id="servicios" class="integrations">
+        <div class="integrations-header">
+            <h2 class="integrations-title">Connectons votre écosystème</h2>
+            <p class="integrations-subtitle">Intégrations natives avec plus de 400 applications via n8n</p>
+        </div>
+        
+        <div class="integrations-orbital">
+            <!-- Central Logo -->
+            <div class="orbital-center">
+                <div class="center-logo-circle">
+                    <img src="DataVola logo.png" alt="DataVola" class="orbital-logo-image">
+                </div>
+            </div>
+            
+            <!-- Orbital Rings -->
+            <div class="orbital-ring orbital-ring-inner">
+                <div class="orbital-icon" data-tool="n8n">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="orbital-icon" data-tool="OpenAI">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22.282 9.821a4.985 4.985 0 0 0-3.122-3.319C18.846 2.539 15.357 0 12 0S5.154 2.539 4.84 6.502a4.985 4.985 0 0 0-3.122 3.32C.785 10.81 0 13.054 0 15.5c0 4.687 3.813 8.5 8.5 8.5 1.75 0 3.375-.53 4.731-1.438a5.5 5.5 0 0 0 5.538 0c1.356.908 2.981 1.438 4.731 1.438 4.687 0 8.5-3.813 8.5-8.5 0-2.446-.785-4.69-2.718-6.679z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="orbital-icon" data-tool="Anthropic">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                            <path d="M2 17L12 22L22 17"/>
+                            <path d="M2 12L12 17L22 12"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="orbital-ring orbital-ring-middle">
+                <div class="orbital-icon" data-tool="Slack">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 18.956 0a2.528 2.528 0 0 1 2.522 2.522v2.52h-2.522zM18.956 6.313a2.528 2.528 0 0 1 2.522 2.521 2.528 2.528 0 0 1-2.522 2.521h-6.313A2.528 2.528 0 0 1 12.121 8.834a2.528 2.528 0 0 1 2.522-2.521h4.313zM12.121 18.956a2.528 2.528 0 0 1 2.522 2.521A2.528 2.528 0 0 1 12.121 24a2.528 2.528 0 0 1-2.521-2.522v-2.521h2.521zM12.121 17.688a2.528 2.528 0 0 1-2.521-2.522 2.528 2.528 0 0 1 2.521-2.521h6.313A2.528 2.528 0 0 1 21.478 15.165a2.528 2.528 0 0 1-2.522 2.522l-6.835.001z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="orbital-icon" data-tool="Gmail">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="orbital-icon" data-tool="WhatsApp">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="orbital-icon" data-tool="Google Sheets">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.5 2.5h-15A2.5 2.5 0 0 0 2 5v14a2.5 2.5 0 0 0 2.5 2.5h15a2.5 2.5 0 0 0 2.5-2.5V5a2.5 2.5 0 0 0-2.5-2.5zM9.5 17.5h-5v-5h5v5zm0-7h-5v-5h5v5zm7 7h-5v-5h5v5zm0-7h-5v-5h5v5z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="orbital-ring orbital-ring-outer">
+                <div class="orbital-icon" data-tool="HubSpot">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.895 3.552c.388 0 .778.029 1.156.09l.353-.681-.028-.012a7.16 7.16 0 0 0-1.483-.534 6.255 6.255 0 0 0-1.586-.22c-.302 0-.591.028-.875.08-1.186.221-2.27.875-3.152 1.77a8.124 8.124 0 0 0-1.97 3.312c-.01.028-.01.056-.02.084a5.56 5.56 0 0 0-2.31-.51 5.69 5.69 0 0 0-3.108.918 5.855 5.855 0 0 0-2.11 2.358 5.59 5.59 0 0 0-.51 2.31c0 .302.03.591.08.875a8.2 8.2 0 0 0 1.77 3.152c.895.882 2.015 1.536 3.2 1.758.284.05.573.08.875.08.302 0 .591-.03.875-.08a8.2 8.2 0 0 0 3.152-1.77c.882-.884 1.536-1.966 1.758-3.152.05-.284.08-.573.08-.875 0-.302-.03-.591-.08-.875a8.2 8.2 0 0 0-1.77-3.152 8.124 8.124 0 0 0-1.77-1.382c.221-.51.51-.99.875-1.425.884-.895 1.966-1.549 3.152-1.77.284-.05.573-.08.875-.08zm-5.965 7.433c.028.028.05.05.08.08-.028-.028-.05-.05-.08-.08zm-7.433 7.433c-.028-.028-.05-.05-.08-.08.028.028.05.05.08.08z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="orbital-icon" data-tool="Salesforce">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.014 0C5.396 0 .008 5.396 .008 12.014c0 6.624 5.388 12.014 12.006 12.014 6.624 0 12.014-5.39 12.014-12.014C24.028 5.396 18.638.014 12.014.014zm.276 3.703a8.123 8.123 0 0 1 2.147.29c2.458.545 4.653 1.97 6.466 3.848a11.99 11.99 0 0 1 2.18 3.08c.27.34.517.69.73 1.05.112.19.22.38.32.58.1.2.19.4.27.61.08.21.15.42.22.64.07.22.13.45.18.68.05.23.09.46.13.69.04.23.07.46.09.7.02.24.03.48.03.72 0 .24-.01.48-.03.72-.02.24-.05.47-.09.7-.04.23-.08.46-.13.69-.05.23-.11.46-.18.68-.07.22-.14.43-.22.64-.08.21-.17.41-.27.61-.1.2-.21.39-.32.58-.21.36-.46.71-.73 1.05a11.99 11.99 0 0 1-2.18 3.08c-1.813 1.878-4.008 3.303-6.466 3.848a8.123 8.123 0 0 1-2.147.29c-.24 0-.48-.01-.72-.03-.24-.02-.47-.05-.7-.09-.23-.04-.46-.08-.69-.13-.23-.05-.46-.11-.68-.18-.22-.07-.43-.14-.64-.22-.21-.08-.41-.17-.61-.27-.2-.1-.39-.21-.58-.32-.36-.21-.71-.46-1.05-.73a11.99 11.99 0 0 1-3.08-2.18c-1.878-1.813-3.303-4.008-3.848-6.466a8.123 8.123 0 0 1-.29-2.147c0-.24.01-.48.03-.72.02-.24.05-.47.09-.7.04-.23.08-.46.13-.69.05-.23.11-.46.18-.68.07-.22.14-.43.22-.64.08-.21.17-.41.27-.61.1-.2.21-.39.32-.58.21-.36.46-.71.73-1.05a11.99 11.99 0 0 1 2.18-3.08c1.813-1.878 4.008-3.303 6.466-3.848a8.123 8.123 0 0 1 2.147-.29z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="orbital-icon" data-tool="Facebook Ads">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="orbital-icon" data-tool="YouTube">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="casos-uso" class="use-cases">
+        <h2 class="section-title">Cas d'usage réels : Voici comment nous procédons</h2>
+        <div class="use-cases-grid">
+            <div class="use-case-card card-1">
+                <div class="card-icon">🤖</div>
+                <h3 class="card-title">Agent de Service Client IA</h3>
+                <p class="card-description">Analysez les données de vos clients avec l'intelligence artificielle et répondez automatiquement 24/7</p>
+            </div>
+            <div class="use-case-card card-2">
+                <div class="card-icon">▶️</div>
+                <h3 class="card-title">Automatisation de Contenu</h3>
+                <p class="card-description">D'une simple idée à un guide YouTube complet et des posts sur les réseaux sociaux</p>
+            </div>
+            <div class="use-case-card card-3">
+                <div class="card-icon">📄</div>
+                <h3 class="card-title">Gestion de Leads par IA</h3>
+                <p class="card-description">Capturez, qualifiez et assignez automatiquement vos leads vers votre CRM</p>
+            </div>
+            <div class="use-case-card card-4">
+                <div class="card-icon">💰</div>
+                <h3 class="card-title">Optimisation des Ventes</h3>
+                <p class="card-description">Gérez intelligemment vos leads pour maximiser vos conversions et augmenter vos revenus</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI in Action Section -->
+    <section id="ia-en-action" class="ai-action">
+        <div class="ai-action-container">
+            <div class="ai-action-header">
+                <h2 class="ai-action-title">Regardez l'IA travailler pour vous</h2>
+                <p class="ai-action-description">Visualisez comment nous transformons une simple donnée entrante en une série d'actions intelligentes et automatisées.</p>
+            </div>
+            
+            <div class="ai-widget">
+                <!-- macOS-style window header -->
+                <div class="widget-header">
+                    <div class="window-controls">
+                        <span class="control control-close"></span>
+                        <span class="control control-minimize"></span>
+                        <span class="control control-maximize"></span>
+                    </div>
+                    <div class="window-title">DataVola - Automatisation IA</div>
+                </div>
+                
+                <div class="widget-content">
+                    <!-- Left Column: Input -->
+                    <div class="widget-column widget-input">
+                        <div class="column-header">
+                            <h3 class="column-title">Entrée</h3>
+                        </div>
+                        <div class="input-simulation">
+                            <div class="input-message">
+                                <div class="message-icon">💬</div>
+                                <div class="message-content">
+                                    <div class="message-header">
+                                        <span class="message-source">WhatsApp</span>
+                                        <span class="message-time">14:32</span>
+                                    </div>
+                                    <p class="message-text" id="input-text">Un nouveau lead arrive via WhatsApp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Process -->
+                    <div class="widget-column widget-process">
+                        <div class="column-header">
+                            <h3 class="column-title">Processus</h3>
+                        </div>
+                            <div class="process-steps">
+                                <!-- Step 1 -->
+                            <div class="process-step" data-step="1">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M9 11l3 3L22 4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4 class="step-title">Analyse du sentiment</h4>
+                                    <p class="step-description">Évaluation de l'intention du client</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 2 -->
+                            <div class="process-step" data-step="2">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4 class="step-title">Consultation de la base de données</h4>
+                                    <p class="step-description">Recherche d'informations client</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 3 -->
+                            <div class="process-step" data-step="3">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2 17L12 22L22 17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2 12L12 17L22 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4 class="step-title">Génération de réponse IA</h4>
+                                    <p class="step-description">Création d'une réponse personnalisée</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 4 -->
+                            <div class="process-step" data-step="4">
+                                <div class="step-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="step-content">
+                                    <h4 class="step-title">Notification Slack envoyée</h4>
+                                    <p class="step-description">L'équipe a été notifiée</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="DataVola logo.png" alt="DataVola" class="logo-image">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="#sobre-nosotros">À propos</a></li>
+                        <li><a href="#trabaja-con-nosotros">Rejoignez-nous</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#automatizacion-ia">Automatisation IA</a></li>
+                        <li><a href="#integraciones">Intégrations</a></li>
+                        <li><a href="#consultoria">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#centro-ayuda">Centre d'aide</a></li>
+                        <li><a href="#privacidad">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DataVola. Tous droits réservés</p>
+            <div class="social-icons">
+                <a href="#" aria-label="LinkedIn" class="social-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="YouTube" class="social-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Instagram" class="social-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

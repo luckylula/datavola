@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.6;
+    }
+  }
+
+  @keyframes pulse-gentle {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.02);
+      opacity: 0.95;
+    }
+  }
+
+  @keyframes orbit {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(180px) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(180px) rotate(-360deg);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in-delay {
+    animation: fade-in 1s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-gentle {
+    animation: pulse-gentle 3s ease-in-out infinite;
+  }
+
+  @keyframes carousel-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-380px * 9 - 2rem * 9));
+    }
+  }
+
+  .process-step.active {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 8px 30px rgba(255, 0, 122, 0.15) !important;
+    border-color: rgba(255, 0, 122, 0.2) !important;
+  }
+
+  .process-step.active .step-icon {
+    background: linear-gradient(135deg, #FF007A 0%, #FF8C00 100%) !important;
+    border-color: rgba(255, 0, 122, 0.3) !important;
+    box-shadow: 0 0 20px rgba(255, 0, 122, 0.4) !important;
+    transform: scale(1.1) !important;
+  }
+
+  .process-step.active svg {
+    color: white !important;
+  }
+
+  .process-step-problem.active {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 8px 30px rgba(255, 0, 122, 0.15) !important;
+    border-color: rgba(255, 0, 122, 0.2) !important;
+  }
+
+  .process-step-problem.active > div:first-child {
+    background: linear-gradient(135deg, #FF007A 0%, #FF8C00 100%) !important;
+    border-color: rgba(255, 0, 122, 0.3) !important;
+    box-shadow: 0 4px 20px rgba(255, 0, 122, 0.3) !important;
+    transform: scale(1.1) !important;
+  }
+
+  .process-step-problem.active svg {
+    stroke: #ffffff !important;
+    color: #ffffff !important;
+  }
+}

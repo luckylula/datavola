@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "WebFetch(domain:stripe.com)",
+      "Bash(npm install:*)",
+      "Bash(if not exist components mkdir components)",
+      "Bash(mkdir:*)",
+      "Bash(npm run dev:*)",
+      "Bash(ping:*)",
+      "Bash(dir /s /b *.tsx)",
+      "Bash(findstr:*)",
+      "Bash(dir:*)",
+      "Bash(cp:*)"
+    ]
+  }
+}

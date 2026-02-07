@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in-delay {
+    animation: fade-in 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+}
+
+/* Custom animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fade-in 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in-node {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.animate-fade-in-node {
+  animation: fade-in-node 0.6s ease-out forwards;
+}
+
+@keyframes carousel-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-380px * 9 - 2rem * 9));
+  }
+}
+
+.process-step.active {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 8px 30px rgba(255, 0, 122, 0.15) !important;
+  border-color: rgba(255, 0, 122, 0.2) !important;
+}
+
+.process-step.active > div:first-child {
+  background: linear-gradient(135deg, #FF007A 0%, #FF8C00 100%) !important;
+  border-color: rgba(255, 0, 122, 0.3) !important;
+  box-shadow: 0 0 20px rgba(255, 0, 122, 0.4) !important;
+  transform: scale(1.1) !important;
+}
+
+.process-step.active svg {
+  color: white !important;
+}
+
+.process-step-problem.active {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 8px 30px rgba(255, 0, 122, 0.15) !important;
+  border-color: rgba(255, 0, 122, 0.2) !important;
+}
+
+.process-step-problem.active > div:first-child {
+  background: linear-gradient(135deg, #FF007A 0%, #FF8C00 100%) !important;
+  border-color: rgba(255, 0, 122, 0.3) !important;
+  box-shadow: 0 4px 20px rgba(255, 0, 122, 0.3) !important;
+  transform: scale(1.1) !important;
+}
+
+.process-step-problem.active svg {
+  stroke: #ffffff !important;
+  color: #ffffff !important;
+}
