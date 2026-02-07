@@ -9,7 +9,7 @@ interface CardProps {
   icon: string;
   color: string;
   delay: number;
-  position: { top?: string; bottom?: string; right?: string; left?: string };
+  position: React.CSSProperties;
 }
 
 interface AnimatedLineProps {
@@ -266,7 +266,7 @@ export default function StripeHero() {
               icon="📊"
               color="#a78bfa"
               delay={0}
-              position={{ position: 'relative' as any }}
+              position={{ position: 'relative' }}
             />
 
             <Card
@@ -274,7 +274,7 @@ export default function StripeHero() {
               icon="💳"
               color="#60a5fa"
               delay={0.2}
-              position={{ position: 'relative' as any }}
+              position={{ position: 'relative' }}
             />
 
             <Card
@@ -282,7 +282,7 @@ export default function StripeHero() {
               icon="🎯"
               color="#f472b6"
               delay={0.4}
-              position={{ position: 'relative' as any }}
+              position={{ position: 'relative' }}
             />
           </div>
         </div>
