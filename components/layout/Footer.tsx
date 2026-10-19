@@ -56,10 +56,21 @@ export function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full text-white hover:bg-white/20 transition-all hover:-translate-y-1"
+                  className="w-12 h-12 flex items-center justify-center rounded-full bg-[#FF0000] text-white hover:bg-[#cc0000] transition-all hover:-translate-y-1 shadow-md"
                   aria-label={social.name}
                 >
-                  <span className="text-xl">{social.icon}</span>
+                  {social.icon === 'youtube' ? (
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="w-7 h-7"
+                      fill="currentColor"
+                      aria-hidden
+                    >
+                      <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.8 15.5v-7l6.3 3.5-6.3 3.5z" />
+                    </svg>
+                  ) : (
+                    <span className="text-xl">{social.icon}</span>
+                  )}
                 </a>
               ))}
             </div>

@@ -4,12 +4,12 @@ export const copy = {
     navLinks: [
       { href: '#inicio', label: 'Accueil' },
       { href: '#servicios', label: 'Solutions' },
-      { href: '#casos-uso', label: "Cas d'Usage" },
+      { href: '#casos-uso', label: 'Créations' },
       { href: '#contacto', label: 'Contact' },
     ],
     cta: {
       label: 'Démarrer',
-      href: '#contacto',
+      href: 'mailto:lula@datavola.net',
     },
   },
   hero: {
@@ -52,31 +52,33 @@ export const copy = {
         title: 'Produit',
         items: [
           { href: '#servicios', label: 'Solutions' },
-          { href: '#casos-uso', label: "Cas d'Usage" },
+          { href: '#casos-uso', label: 'Créations' },
           { href: '#contacto', label: 'Contact' },
         ],
       },
       {
         title: 'Entreprise',
         items: [
-          { href: '#', label: 'À propos' },
-          { href: '#', label: 'Carrières' },
+          { href: '/a-propos', label: 'À propos' },
+          { href: 'mailto:lula@datavola.net', label: 'Contact' },
         ],
       },
       {
         title: 'Légal',
         items: [
-          { href: '#', label: 'Mentions légales' },
-          { href: '#', label: 'Confidentialité' },
-          { href: '#', label: 'CGU' },
+          { href: '/mentions-legales', label: 'Mentions légales' },
+          { href: '/confidentialite', label: 'Confidentialité' },
+          { href: '/cgu', label: 'CGU' },
         ],
       },
     ],
     copyright: `© ${new Date().getFullYear()} DataVola. Tous droits réservés.`,
     social: [
-      { name: 'LinkedIn', href: 'https://linkedin.com', icon: 'in' },
-      { name: 'Twitter', href: 'https://twitter.com', icon: '𝕏' },
-      { name: 'YouTube', href: 'https://youtube.com', icon: '▶' },
+      {
+        name: 'YouTube',
+        href: 'https://www.youtube.com/@datavolanet',
+        icon: 'youtube',
+      },
     ],
   },
 }

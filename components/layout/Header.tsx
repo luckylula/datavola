@@ -12,32 +12,32 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-[1000] bg-black/95 backdrop-blur-md shadow-lg">
       <Container>
-        <nav className="flex items-center justify-between h-20">
+        <nav className="flex items-center justify-between h-28 lg:h-32">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
               src="/images/logocirculo.png"
               alt="DataVola"
-              width={70}
-              height={70}
-              className="h-[70px] w-[70px] object-contain rounded-full"
+              width={90}
+              height={90}
+              className="h-[90px] w-[90px] object-contain rounded-full"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-10">
             {copy.header.navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white font-medium text-lg hover:text-[#667eea] transition-colors"
+                className="text-white font-medium text-2xl lg:text-3xl hover:text-[#667eea] transition-colors"
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href={copy.header.cta.href}
-              className="bg-gradient-to-r from-[#667eea] to-[#764ba2] text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all"
+              className="bg-gradient-to-r from-[#667eea] to-[#764ba2] text-white px-8 py-4 rounded-full font-semibold text-2xl hover:shadow-lg hover:scale-105 transition-all"
             >
               {copy.header.cta.label}
             </Link>
@@ -45,24 +45,24 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden flex flex-col gap-1 bg-transparent border-none cursor-pointer p-2"
+            className="md:hidden flex flex-col gap-1.5 bg-transparent border-none cursor-pointer p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Menu"
           >
-            <span className="w-6 h-0.5 bg-white rounded transition-all" />
-            <span className="w-6 h-0.5 bg-white rounded transition-all" />
-            <span className="w-6 h-0.5 bg-white rounded transition-all" />
+            <span className="w-7 h-0.5 bg-white rounded transition-all" />
+            <span className="w-7 h-0.5 bg-white rounded transition-all" />
+            <span className="w-7 h-0.5 bg-white rounded transition-all" />
           </button>
         </nav>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden fixed top-20 left-0 right-0 bg-white flex flex-col p-8 shadow-xl transform transition-transform z-[999]">
+          <div className="md:hidden fixed top-28 left-0 right-0 bg-white flex flex-col p-8 shadow-xl transform transition-transform z-[999]">
             {copy.header.navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 font-medium text-lg py-4 border-b border-gray-200 hover:text-[#667eea] transition-colors"
+                className="text-gray-700 font-medium text-2xl py-5 border-b border-gray-200 hover:text-[#667eea] transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
@@ -70,7 +70,7 @@ export function Header() {
             ))}
             <Link
               href={copy.header.cta.href}
-              className="bg-gradient-to-r from-[#667eea] to-[#764ba2] text-white px-6 py-3 rounded-full font-semibold text-center mt-4"
+              className="bg-gradient-to-r from-[#667eea] to-[#764ba2] text-white px-8 py-4 rounded-full font-semibold text-2xl text-center mt-4"
               onClick={() => setMobileMenuOpen(false)}
             >
               {copy.header.cta.label}

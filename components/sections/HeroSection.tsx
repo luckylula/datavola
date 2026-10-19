@@ -32,7 +32,7 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section id="inicio" className="relative mt-20 min-h-screen bg-white overflow-hidden">
+    <section id="inicio" className="relative mt-28 lg:mt-32 min-h-screen bg-white overflow-hidden">
       {/* Gradient Background */}
       <div className="absolute top-0 left-0 w-full h-[400px] max-h-[50vh] bg-gradient-to-br from-[#8E44AD] via-[#FF007A] via-[#00D4FF] to-[#FFD700] clip-path-polygon" 
            style={{ clipPath: 'polygon(0 0, 100% 0, 100% 85%, 0 100%)' }} />

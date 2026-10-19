@@ -379,7 +379,7 @@ export function ProcessStepperSection() {
 
         <div className="mt-8 flex justify-center px-8">
           <a
-            href="#contacto"
+            href="mailto:lula@datavola.net"
             className="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-10 py-4 text-base md:text-lg font-semibold text-white shadow-sm transition hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
             Faites le premier pas, on vous accompagne.

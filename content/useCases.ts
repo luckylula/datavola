@@ -1,26 +1,32 @@
 export const useCases = [
   {
-    icon: '📧',
-    title: 'Emails & notifications',
+    title: 'Sites web & boutiques en ligne',
     description:
-      "Automatisez l'envoi d'emails, les relances et les notifications pour gagner du temps au quotidien.",
+      'Présentez votre activité, mettez vos produits en valeur et vendez en ligne.',
   },
   {
-    icon: '📊',
-    title: 'Données & rapports',
+    title: 'Applications & outils sur mesure',
     description:
-      "Agrégation et mise à jour automatique de vos données, tableaux de bord et rapports.",
+      'Simplifiez votre quotidien avec des outils adaptés à votre façon de travailler.',
   },
   {
-    icon: '🤖',
-    title: 'Chatbots & support',
+    title: 'Automatisation des tâches',
     description:
-      "Répondez à vos clients 24/7 avec des assistants conversationnels personnalisés.",
+      'Gagnez du temps sur les tâches répétitives : saisie, relances, suivi et gestion de documents.',
   },
   {
-    icon: '🔗',
-    title: 'Intégrations',
+    title: 'Newsletters, emails & réseaux sociaux',
     description:
-      "Connectez vos outils (CRM, Excel, Slack...) et faites circuler l'information sans effort.",
+      "Facilitez la création et l'envoi de vos newsletters, campagnes et messages de suivi.",
+  },
+  {
+    title: 'Chatbots & assistance client',
+    description:
+      'Répondez aux questions fréquentes et guidez vos clients, même en dehors de vos horaires.',
+  },
+  {
+    title: 'Assistants IA pour vos équipes',
+    description:
+      "Aidez vos équipes à retrouver l'information, rédiger et préparer leur travail.",
   },
 ]
