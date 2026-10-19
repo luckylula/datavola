@@ -5,7 +5,6 @@ export const copy = {
       { href: '#inicio', label: 'Accueil' },
       { href: '#servicios', label: 'Solutions' },
       { href: '#casos-uso', label: "Cas d'Usage" },
-      { href: '#blog', label: 'Blog' },
       { href: '#contacto', label: 'Contact' },
     ],
     cta: {
@@ -41,9 +40,10 @@ export const copy = {
     title: 'Prêt à automatiser ?',
     description:
       "Démarrons ensemble. Dites-nous ce que vous voulez automatiser et nous vous proposons une solution sur mesure.",
+    email: 'lula@datavola.net',
     cta: {
       label: 'Nous contacter',
-      href: '#contacto',
+      href: 'mailto:lula@datavola.net',
     },
   },
   footer: {
@@ -60,7 +60,6 @@ export const copy = {
         title: 'Entreprise',
         items: [
           { href: '#', label: 'À propos' },
-          { href: '#', label: 'Blog' },
           { href: '#', label: 'Carrières' },
         ],
       },

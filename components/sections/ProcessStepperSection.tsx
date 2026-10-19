@@ -358,18 +358,32 @@ export function ProcessStepperSection() {
           </div>
         </div>
 
+        <div className="mt-32 md:mt-40 px-8 flex justify-center">
+          <div className="w-full rounded-2xl p-8 md:p-10 shadow-lg border-transparent bg-gradient-to-br from-[#667eea] via-[#764ba2] via-[#f093fb] via-[#f5576c] to-[#ff8c00] text-white">
+            <h3 className="text-xl md:text-2xl font-bold text-center leading-tight mb-6">
+              L&apos;IA fait désormais partie du paysage. Et si vous passiez le cap&nbsp;?
+            </h3>
+            <div className="space-y-4 text-base md:text-lg leading-relaxed text-white/95 text-center">
+              <p>
+                Comme Excel ou Internet avant elle, l&apos;intelligence artificielle transforme
+                nos façons de travailler. Et il n&apos;est pas trop tard pour vous y mettre.
+              </p>
+              <p>
+                Avec un accompagnement adapté, vous pouvez avancer pas à pas, découvrir les
+                usages qui vous sont vraiment utiles et les intégrer à votre quotidien&nbsp;:
+                moins de tâches répétitives, plus de temps pour ce qui compte.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="mt-8 flex justify-center px-8">
-          <button
-            onClick={() => {
-              const element = document.getElementById('casos-uso')
-              if (element) {
-                element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-              }
-            }}
-            className="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          <a
+            href="#contacto"
+            className="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-10 py-4 text-base md:text-lg font-semibold text-white shadow-sm transition hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
-            Voir un exemple concret
-          </button>
+            Faites le premier pas, on vous accompagne.
+          </a>
         </div>
       </div>
 
