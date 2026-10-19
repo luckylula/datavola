@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { useState } from 'react'
 import { Container } from './Container'
 import { copy } from '@/content/copy'
@@ -12,16 +11,19 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-[1000] bg-black/95 backdrop-blur-md shadow-lg">
       <Container>
-        <nav className="flex items-center justify-between h-28 lg:h-32">
+        <nav className="flex items-center justify-between h-36 lg:h-40">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image
-              src="/images/logocirculo.png"
-              alt="DataVola"
-              width={90}
-              height={90}
-              className="h-[90px] w-[90px] object-contain rounded-full"
-            />
+            <video
+              className="h-[120px] w-[120px] object-cover rounded-full"
+              autoPlay
+              loop
+              muted
+              playsInline
+              aria-label="DataVola"
+            >
+              <source src="/images/logocirculo.mp4" type="video/mp4" />
+            </video>
           </Link>
 
           {/* Desktop Navigation */}
@@ -57,7 +59,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden fixed top-28 left-0 right-0 bg-white flex flex-col p-8 shadow-xl transform transition-transform z-[999]">
+          <div className="md:hidden fixed top-36 left-0 right-0 bg-white flex flex-col p-8 shadow-xl transform transition-transform z-[999]">
             {copy.header.navLinks.map((link) => (
               <Link
                 key={link.href}
