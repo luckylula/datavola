@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { Container } from './Container'
 import { copy } from '@/content/copy'
 
@@ -12,13 +11,16 @@ export function Footer() {
             {/* Logo & Description */}
             <div className="flex flex-col gap-4">
               <Link href="/" className="inline-block">
-                <Image
-                  src="/images/DataVola logo.png"
-                  alt="DataVola"
-                  width={60}
-                  height={60}
-                  className="h-[60px] w-auto object-contain"
-                />
+                <video
+                  className="h-[120px] w-[120px] object-cover rounded-full"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  aria-label="DataVola"
+                >
+                  <source src="/images/logocirculo.mp4" type="video/mp4" />
+                </video>
               </Link>
             </div>
 
